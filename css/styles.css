@@ -7,6 +7,25 @@
     --footer-logo: #F4F4FD;
     --footer-text: #E7E9FC;
 }
+/**----------RESET STYLES----------*/ p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -21,8 +40,17 @@ body {
 .link{
     text-decoration: none;
 }
+
+.container {
+    width: 1160px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
 /**----------HEADER----------*/
 .header {
+    padding-top: 24px;
 }
 
 .header-navigation {}
