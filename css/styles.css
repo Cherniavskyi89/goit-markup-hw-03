@@ -39,23 +39,42 @@ body {
 
 .link{
     text-decoration: none;
+    
+}
+
+.sections{
+    padding-top: 120px;
+    padding: 120px;
 }
 
 .container {
-    width: 1160px;
+    width: 1158px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
     outline: 2px solid red;
 }
 /**----------HEADER----------*/
+
+
 .header {
     padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.header-navigation {}
+.main-nav {
+    display: flex;
+    align-items: center;    
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
 
 .header-logo {
+    margin-right: 76px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -69,15 +88,28 @@ body {
     color: var(--header-logo-title, #2E2F42);
 }
 
-.header-list {}
+.header-list {
+    display: flex;
+}
 
-.header-item {}
+.header-item:not(:last-child) {
+    margin-right: 40px;
+}
+.header-item{
+
+}
 
 .header-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 40px;
+
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--header-logo-title, #2E2F42);
+    
 }
 
 .header-link:hover, 
@@ -88,9 +120,21 @@ body {
 .header-contacts {
     font-style: normal;
     line-height: 1.5;
+    
+}
+
+.contacts-list {
+    display: flex;
+    
+    }
+
+.contacts-list .contact-item + .contact-item {
+    margin-left: 40px;
+
 }
 
 .header-contact-link {
+    margin-right: 40px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -114,9 +158,17 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--mainbg-title, #FFFFFF);
+    padding-top: 188px;
+    padding-bottom: 48px;
 }
 
 .hero-btn {
+    margin-bottom: 188px;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    margin-left: 478px;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -125,15 +177,35 @@ body {
     color: var(--mainbg-title, #FFFFFF);
     cursor: pointer;
     background-color: var(--logo-divide-bgbtn, #4D5AE5);
+    
 }
+
 .hero-btn:hover, .hero-btn:focus{
     background-color: var(--link-hover, #404BBF);
+
 }
 /**----------ABOUT----------*/
+
+.about-list {
+    display: flex;
+    width: (100% - 24px) / 2;
+    
+    
+}
 
 .hide {
     visibility: hidden;
     color: var(--mainbg-title, #FFFFFF);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .about-title {
     font-weight: 500;
@@ -149,6 +221,7 @@ body {
 }
 /**----------WHAT ARE WE DOING----------*/
 .product {
+    padding-bottom: 120px;
 }
 
 .product-title {
@@ -158,8 +231,11 @@ body {
     text-transform: capitalize;
     letter-spacing: 0.02em;
     color: var(--header-logo-title, #2E2F42);
+    margin-bottom: 72px;
 }
-.product-list {}
+.product-list {
+    display: flex;
+}
 
 .product-item {}
 
@@ -169,46 +245,65 @@ body {
 }
 
 .team-title {
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    background-color:var(--mainbg-title, #FFFFFF);
+    background-color:var(--footer-logo, #F4F4FD)
     color: var(--header-logo-title, #2E2F42);
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+    
 
 .list {}
 
 .team-item {
+    width: calc((100% - 24px) / 4);
     background-color: #FFFFFF;
 }
 
 .team-name {
+    margin-top: 32px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--header-logo-title, #2E2F42);
     background-color: var(--mainbg-title, #FFFFFF);
+    text-align: center;
 }
 
 .team-position {
+    margin-bottom: 32px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     background-color: var(--mainbg-title, #FFFFFF);
+    text-align: center;
 }
 
-.team-item {}
+.team-item {
+    
+}
+
 
 /**----------FOOTER----------*/
 .footer{
     background-color: var(--header-logo-title, #2E2F42);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-cont {
+    
 }
 
 .footer-logo {
+    margin-top: 100px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -223,18 +318,30 @@ body {
 }
 
 .footer-text {
+    width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-text, #E7E9FC);
+    margin-top: 16px;
 }
 
 /**----------PORTFOLIO----------*/
 
-.filtr-list {}
+.filtr-list {
+    padding-top: 96px;
+    padding-bottom: 72px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    
+}
 
-.filtr-item {}
+.filtr-item {
+    
+}
 
 .filrt-button {
+    padding: 12px 24px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -243,6 +350,7 @@ body {
     color: var(--logo-divide-bgbtn, #4D5AE5);
     cursor: pointer;
     background-color: var(--footer-logo, #F4F4FD);
+    border: 0;
 }
 .filrt-button:hover,
 .filrt-button:focus {
@@ -252,11 +360,19 @@ body {
 
 .offers {}
 
-.offers-list {}
+.offers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 120px;
+
+}
 
 .offers-item {}
 
+
 .offers-title {
+    margin-top: 32px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -265,6 +381,8 @@ body {
 }
 
 .offers-text {
+    margin-top: 8px;
+    margin-bottom: 80px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--header-contacts, #434455);

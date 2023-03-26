@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container main-nav">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo link"
             >Web<span class="logo-divide">Studio</span>
@@ -42,13 +42,15 @@
         </nav>
         <!--contacts-->
         <address class="header-contacts">
-          <ul class="list">
-            <li>
-              <a class="header-contact-link link" href="mailto:info@devstudio.com"
+          <ul class="contacts-list list">
+            <li class="contact-item">
+              <a
+                class="header-contact-link link"
+                href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="contact-item">
               <a class="header-contact-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -62,21 +64,24 @@
 
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title">
+            Effective Solutions<br />
+            for Your Business
+          </h1>
           <button class="hero-btn" type="button">Order Service</button>
         </div>
       </section>
 
       <!--About us-->
-      <section class="about">
+      <section class="about sections">
         <div class="container">
           <h2 class="hide">About us</h2>
-          <ul class="list">
+          <ul class="about-list list">
             <li class="about-item">
               <h3 class="about-title">Strategy</h3>
               <p class="about-text">
-                Our goal is to identify the business problem to walk away with the
-                perfect and creative solution.
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
               </p>
             </li>
             <li class="about-item">
@@ -121,7 +126,7 @@
         </div>
       </section>
       <!--Team photo-->
-      <section class="team">
+      <section class="team sections">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
@@ -167,13 +172,13 @@
     </main>
     <!--footer-->
     <footer class="footer">
-      <div class="container">
+      <div class="footer-cont container">
         <a class="footer-logo link" href="./index.html"
           >Web<span class="footer-divide">Studio</span></a
         >
         <p class="footer-text">
-          Increase the flow of customers and sales for your business with digital
-          marketing & growth solutions.
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
         </p>
       </div>
     </footer>
