@@ -159,7 +159,8 @@ body {
 .hero {
     background-color: var(--header-logo-title, #2E2F42);
     padding-top: 188px;
-    padding-bottom: 48px;
+    /* padding-bottom: 48px; */
+    
 }
 
 .hero-title {
@@ -168,10 +169,12 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--mainbg-title, #FFFFFF);
+    margin: 0px;
     
 }
 
 .hero-btn {
+    margin-top: 48px;
     margin-bottom: 188px;
     min-width: 169px;
     height: 56px;
@@ -200,6 +203,7 @@ body {
 .about-list {
     display: flex;
     gap: 24px;
+    /* width: calc((100% - 24px) / 3); */
 }
 .about-item {
 
@@ -231,7 +235,7 @@ body {
 .about-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
+    max-width: 264px;
 }
 
 /**----------WHAT ARE WE DOING----------*/
