@@ -68,14 +68,13 @@ body {
 
 
 .header {
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .main-nav {
     display: flex;
     align-items: center; 
-    padding-top: 24px;
+    
 }
 
 .header-navigation {
@@ -161,6 +160,8 @@ body {
 /**----------HERO----------*/
 .hero {
     background-color: var(--header-logo-title, #2E2F42);
+    padding-top: 188px;
+    padding-bottom: 48px;
 }
 
 .hero-title {
@@ -169,8 +170,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--mainbg-title, #FFFFFF);
-    padding-top: 188px;
-    padding-bottom: 48px;
+    
 }
 
 .hero-btn {
@@ -197,12 +197,15 @@ body {
 
 }
 /**----------ABOUT----------*/
-
+.about-container {
+    padding: 0;
+}
 .about-list {
     display: flex;
-    width: (100% - 24px) / 3;
-    
-    
+    gap: 24px;
+}
+.about-item {
+
 }
 
 .hide {
@@ -225,6 +228,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--header-logo-title, #2E2F42);
+    
 }
 
 .about-text {
@@ -232,6 +236,7 @@ body {
     letter-spacing: 0.02em;
     
 }
+
 /**----------WHAT ARE WE DOING----------*/
 .product {
     padding-bottom: 120px;
@@ -248,6 +253,7 @@ body {
 }
 .product-list {
     display: flex;
+    gap: 24px;
 }
 
 .product-item {}
@@ -342,7 +348,7 @@ body {
 
 .filtr-list {
     padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -371,38 +377,41 @@ body {
     color: var(--mainbg-title, #FFFFFF);
 }
 
-.offers {}
 
 .offers-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 48px;
+    column-gap: 24px;
     padding-bottom: 120px;
-
-
 }
+
 
 .offers-item {
-    border: 1px solid #E7E9FC;
-    border-top: none;
-        
-    
+    flex-basis: calc((100% - 48px) / 3);
 }
 
-
 .offers-title {
-    margin-top: 32px;
+    /* margin-top: 32px; */
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--header-logo-title, #2E2F42);
+    padding-left: 16px;
 }
 
 .offers-text {
-    margin-top: 8px;
-    margin-bottom: 80px;
+    /* margin-top: 8px;
+    margin-bottom: 32px; */
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--header-contacts, #434455);
+    padding-left: 16px;
+}
+
+.offers-border {
+    border: 1px solid #E7E9FC;
+    border-top: none;
+    padding: 32px 0px;
 }
