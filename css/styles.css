@@ -15,14 +15,12 @@ h4,
 h5,
 h6,
 p, {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     display: block;
 }
 
 ul {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     padding-left: 0;
 }
 
@@ -54,7 +52,7 @@ body {
 
 .sections{
     padding-top: 120px;
-    padding: 120px;
+    padding-bottom: 120px;
 }
 
 .container {
@@ -198,7 +196,6 @@ body {
 }
 /**----------ABOUT----------*/
 .about-container {
-    padding: 0;
 }
 .about-list {
     display: flex;
@@ -249,7 +246,7 @@ body {
     text-transform: capitalize;
     letter-spacing: 0.02em;
     color: var(--header-logo-title, #2E2F42);
-    margin-bottom: 72px;
+    
 }
 .product-list {
     display: flex;
@@ -347,12 +344,14 @@ body {
 /**----------PORTFOLIO----------*/
 
 .filtr-list {
-    padding-top: 96px;
+    
     margin-bottom: 72px;
     display: flex;
     gap: 24px;
     justify-content: center;
-    
+}
+.filtr-container {
+    padding-top: 96px;
 }
 
 .filtr-item {
@@ -383,6 +382,10 @@ body {
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
+    
+}
+
+.offers-container{
     padding-bottom: 120px;
 }
 
@@ -392,22 +395,23 @@ body {
 }
 
 .offers-title {
-    /* margin-top: 32px; */
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--header-logo-title, #2E2F42);
     padding-left: 16px;
+    margin: 0 0;
 }
 
 .offers-text {
-    /* margin-top: 8px;
-    margin-bottom: 32px; */
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--header-contacts, #434455);
     padding-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    
 }
 
 .offers-border {
