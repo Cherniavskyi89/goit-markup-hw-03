@@ -357,9 +357,10 @@ body {
 }
 .main-container {
     padding-bottom: 120px;
+    padding-top: 96px;
 }
 .filtr-container {
-    padding-top: 96px;
+    
 }
 
 .filtr-item {
