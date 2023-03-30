@@ -159,7 +159,9 @@ body {
 .hero {
     background-color: var(--header-logo-title, #2E2F42);
     padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
+    
     
 }
 
@@ -173,7 +175,7 @@ body {
 
 .hero-btn {
     margin-top: 48px;
-    margin-bottom: 188px;
+    /* padding-bottom: 188px; */
     min-width: 169px;
     height: 56px;
     border-radius: 4px;
@@ -353,8 +355,9 @@ body {
     gap: 24px;
     justify-content: center;
 }
-.filtr-container {
+.main-container {
     padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .filtr-item {
@@ -389,7 +392,7 @@ body {
 }
 
 .offers-container{
-    padding-bottom: 120px;
+    
 }
 
 
