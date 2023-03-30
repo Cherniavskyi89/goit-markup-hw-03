@@ -356,8 +356,10 @@ body {
     justify-content: center;
 }
 .main-container {
-    padding-top: 96px;
     padding-bottom: 120px;
+}
+.filtr-container {
+    padding-top: 96px;
 }
 
 .filtr-item {
